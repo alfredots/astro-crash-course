@@ -2,9 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import Showcase from "../components/Showcase.astro";
 import Features from "../components/Features.astro";
+import Tabs from "../components/Tabs.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Curso de astr2o">
 	<Showcase showExtra={true}/>
 	<Features/>
+	<Tabs headings={['NPM', 'PNPM' , 'YARN']} contents={['teste', 'teste1', 'teste3']}/>
+	<Footer/>
 </Layout>
